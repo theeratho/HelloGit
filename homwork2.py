@@ -23,10 +23,22 @@ while N > 0 :
   else :
     N = N-x
     count = count +1
-  if N == 0 :
-    break
-  print("There are", N,"sticks in the pile")
-
-print("OK, There is no stick left in the pile. You spent",count,"times")
-print("Hello")
+    if N == 0 :
+      print(Name,", Take the last stick ")
+      print("Computer Win! (I, smart computer, It's too easy")
+      break
+    if N > 0  :
+      print("There are", N,"sticks in the pile")
+    ##ramdon number
+    i = random.randint(1,2)
+    if N == 1 :
+      i = 1 
+    N = N-i
+    print("I, Smart computerm takes :", i)
+    if N > 0 :
+      print("There are", N,"Stick in the pile")
+    if N == 0 :
+      print("I, smart computer, take the last stick")
+      print(Name,", Win! (I, smart computer, am so sad T_T")
+      break
 
