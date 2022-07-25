@@ -28,4 +28,5 @@ while N > 0 :
   print("There are", N,"sticks in the pile")
 
 print("OK, There is no stick left in the pile. You spent",count,"times")
+print("Hello")
 
